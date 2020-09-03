@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Kaban</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./vendors/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body style="margin-top: 70px;">
+  <nav class="navbar navbar-expand-md fixed-top bg-white">
+    <a href="/" class="navbar-brand">
+      <img src="./assets/img/logo.png" alt="royal kaban logo" class="logo img-fluid" />
+    </a>
+    <button class="navbar-toggler" data-target="#top-navbar" data-toggle="collapse">
+      <i class="fas fa-bars fa-2x"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="top-navbar">
+      <ul class="navbar-nav ml-sm-auto ml-3">
+        <li class="nav-item mr-sm-3">
+          <a href="#" class="nav-link text-secondary font-weight-bold">
+            <i class="fas fa-home text-gold"></i>
+            Home
+          </a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a href="#" class="nav-link text-secondary font-weight-bold" data-target="#reservation-modal"
+            data-toggle="modal">
+            <i class="fas fa-comment text-gold"></i>
+            About Royal Kaban
+          </a>
+        </li>
+
+        <li class="nav-item mr-sm-3">
+          <a href="#" class="nav-link text-secondary font-weight-bold" data-target="#reservation-modal"
+            data-toggle="modal">
+            <i class="fas fa-phone-alt text-gold"></i>
+            Our Contact
+          </a>
+        </li>
+
+        <li class="nav-item mr-sm-3">
+          <a href="#" class="nav-link text-secondary font-weight-bold" data-target="#reservation-modal"
+            data-toggle="modal">
+            <i class="fas fa-image text-gold"></i>
+            Gallery
+          </a>
+        </li>
+
+        <li class="nav-item mr-sm-3">
+          <a href="#" class="nav-link text-secondary font-weight-bold" data-target="#reservation-modal"
+            data-toggle="modal">
+            <i class="fas fa-ticket-alt text-gold"></i>
+            Reservation
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-3">
+    <div class="row">
+      <section class="carousel slide col-12" data-ride="carousel" id="main-slider">
+        <ul class="carousel-indicators">
+          <li class="active" data-target="#main-slider" data-slide-to="0"></li>
+          <li data-target="#main-slider" data-slide-to="1"></li>
+          <li data-target="#main-slider" data-slide-to="2"></li>
+          <li data-target="#main-slider" data-slide-to="3"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div>
+              <img src="./assets/img/gallery/pexels-pixabay-261102.jpg" alt="royal kaban hotel" class="slider-img">
+              <div class="hero-textbox text-center">
+                <i class="fas fa-crown fa-5x mb-3"></i>
+                <h4>Welcome To Royal Kaban Hotel</h4>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img src="./assets/img/gallery/pexels-craig-adderley-2306282.jpg" alt="dine like a king"
+                class="slider-img">
+              <div class="hero-textbox text-center">
+                <i class="fas fa-utensils fa-4x mb-3"></i>
+                <h4>Start Dining like a King</h4>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img src="./assets/img/gallery/pexels-mentatdgt-2545238.jpg" alt="dine like a king" class="slider-img">
+              <div class="hero-textbox text-center">
+                <i class="fas fa-air-freshener fa-4x mb-4"></i>
+                <h4>We have comfortable environs to suit your mood</h4>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img src="./assets/img/gallery/pexels-castorly-stock-3761182.jpg" alt="dine like a king"
+                class="slider-img">
+              <div class="hero-textbox text-center">
+                <i class="fas fa-smile fa-4x mb-3"></i>
+                <h4>Your satifaction is our priority</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="col-12 col-sm-10 col-md-9 mx-auto">
+      <div class="text-center">
+        <h2 class="title">Our Facilities</h2>
+        <p>We have the following facilities in our hotel.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-center">
+          <i class="fas fa-wifi fa-2x"></i>
+          <span class="d-block">Free Wifi</span>
+        </div>
+        <div class="col-4 text-center">
+          <i class="fas fa-swimming-pool fa-2x"></i>
+          <span class="d-block">Pool Bar</span>
+        </div>
+        <div class="col-4 text-center">
+          <i class="fas fa-spa fa-2x"></i>
+          <span class="d-block">Lavendar Spa</span>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-4 text-center mb-2">
+          <i class="fas fa-utensils fa-2x"></i>
+          <span class="d-block">Restaurant</span>
+        </div>
+        <div class="col-4 text-center mb-2">
+          <i class="fas fa-dumbbell fa-2x"></i>
+          <span class="d-block">Gym</span>
+        </div>
+        <div class="col-4 text-center mb-2">
+          <i class="fas fa-glass-martini fa-2x"></i>
+          <span class="d-block">Tiki's Bar</span>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-4 text-center mb-2">
+          <i class="fas fa-landmark fa-2x"></i>
+          <span class="d-block">Camwell Hall</span>
+        </div>
+        <div class="col-4 text-center mb-2">
+          <i class="fas fa-luggage-cart fa-2x"></i>
+          <span class="d-block">Luggage Storage</span>
+        </div>
+        <div class="col-4 text-center mb-2">
+          <i class="fas fa-crown fa-2x"></i>
+          <span class="d-block">Games Throne</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container my-3">
+    <div class="text-center">
+      <h2 class="title">Suites & Apartments</h2>
+      <p>Our suites and apartments are superb</p>
+    </div>
+
+    <div class="carousel slide" data-ride="carousel" id="suites-slider">
+      <ul class="carousel-indicators carousel-indicators-sidebar">
+        <li class="active" data-target="#suites-slider" data-slide-to="0"></li>
+        <li data-target="#suites-slider" data-slide-to="1"></li>
+        <li data-target="#suites-slider" data-slide-to="2"></li>
+        <li data-target="#suites-slider" data-slide-to="3"></li>
+      </ul>
+
+      <div class="carousel-inner mb-5">
+        <div class="carousel-item active">
+          <div>
+            <img src="./assets/img/gallery/pexels-suhel-vba-3659683.jpg" alt="Executive Suites"
+              class="suites-slider-img">
+            <div class="text-center">
+              <h4>Executive Suite</h4>
+              <p class="text-center">
+                <i class="fas fa-wifi mr-2"></i> |
+                <i class="fas fa-coffee mr-2"></i> |
+                <i class="fas fa-car mr-2"> </i> |
+                <i class="fas fa-plane"></i> |
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <img src="./assets/img/gallery/pexels-naim-benjelloun-2029722.jpg" alt="Presidential Suites"
+              class="suites-slider-img">
+            <div class="text-center">
+              <h4>Presidential Suite</h4>
+              <p class="text-center">
+                <i class="fas fa-wifi mr-2"></i> |
+                <i class="fas fa-coffee mr-2"></i> |
+                <i class="fas fa-car mr-2"> </i> |
+                <i class="fas fa-plane"></i> |
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <img src="./assets/img/gallery/pexels-mentatdgt-2545238.jpg" alt="Executive Suites"
+              class="suites-slider-img">
+            <div class="text-center">
+              <h4>Premium Suite</h4>
+              <p class="text-center">
+                <i class="fas fa-wifi mr-2"></i> |
+                <i class="fas fa-coffee mr-2"></i> |
+                <i class="fas fa-car mr-2"> </i> |
+                <i class="fas fa-plane"></i> |
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <img src="./assets/img/gallery/pexels-thorsten-technoman-338504.jpg" alt="Executive Suites"
+              class="suites-slider-img">
+            <div class="text-center">
+              <h4>Kent Spring</h4>
+              <p class="text-center">
+                <i class="fas fa-wifi mr-2"></i> |
+                <i class="fas fa-coffee mr-2"></i> |
+                <i class="fas fa-car mr-2"> </i> |
+                <i class="fas fa-plane"></i> |
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-10 col-sm-8 mx-auto text-center">
+        <h2 class="title">Gallery</h2>
+        <p>Our rooms gallery presentation.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 col-sm-4 col-md-3">
+        <a href="./assets/img/gallery/pexels-craig-adderley-2306282.jpg" data-fancybox="gallery"
+          data-caption="Royal Kaban ... Live like a king">
+          <img src="./assets/img/gallery/pexels-craig-adderley-2306282.jpg" alt="gallery" class="img-fluid gallery-img">
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <a href="./assets/img/gallery/pexels-pixabay-164595.jpg" data-fancybox="gallery"
+          data-caption="Royal Kaban ... Live like a king">
+          <img src="./assets/img/gallery/pexels-pixabay-164595.jpg" alt="gallery" class="img-fluid gallery-img">
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <a href="./assets/img/gallery/pexels-burst-545034.jpg" data-fancybox="gallery"
+          data-caption="Royal Kaban ... Live like a king">
+          <img src="./assets/img/gallery/pexels-burst-545034.jpg" alt="gallery" class="img-fluid gallery-img">
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <a href="./assets/img/gallery/pexels-william-sun-1267438.jpg" data-fancybox="gallery"
+          data-caption="Royal Kaban ... Live like a king">
+          <img src="./assets/img/gallery/pexels-william-sun-1267438.jpg" alt="gallery" class="img-fluid gallery-img">
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <a href="./assets/img/gallery/pexels-mentatdgt-2545238.jpg" data-fancybox="gallery"
+          data-caption="Royal Kaban ... Live like a king">
+          <img src="./assets/img/gallery/pexels-mentatdgt-2545238.jpg" alt="gallery" class="img-fluid gallery-img">
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <a href="./assets/img/gallery/pexels-naim-benjelloun-2029722.jpg" data-fancybox="gallery"
+          data-caption="Royal Kaban ... Live like a king">
+          <img src="./assets/img/gallery/pexels-naim-benjelloun-2029722.jpg" alt="gallery"
+            class="img-fluid gallery-img">
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <a href="./assets/img/gallery/pexels-pixabay-161758.jpg" data-fancybox="gallery"
+          data-caption="Royal Kaban ... Live like a king">
+          <img src="./assets/img/gallery/pexels-pixabay-161758.jpg" alt="gallery" class="img-fluid gallery-img">
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <a href="./assets/img/gallery/pexels-engin-akyurt-1579253.jpg" data-fancybox="gallery"
+          data-caption="Royal Kaban ... Live like a king">
+          <img src="./assets/img/gallery/pexels-engin-akyurt-1579253.jpg" alt="gallery" class="img-fluid gallery-img">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="text-center">
+      Royal Kaban Hotel &copy;. All Copyrights reserved, since 2020
+    </p>
+  </footer>
+
+  <div class="modal fade" id="reservation-modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Template</h4>
+          <a href="" class="close" data-dismiss="modal">
+            &times;
+          </a>
+        </div>
+        <div class="modal-body">
+          Coming Soon... Royal Kaban
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./vendors/js/jquery-3.3.1.min.js"></script>
+  <script src="./vendors/js/popper.js"></script>
+  <script src="./vendors/js/all.min.js"></script>
+  <script src="./vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="./vendors/js/jquery.fancybox.js"></script>
+</body>
+
+</html>
