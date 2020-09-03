@@ -10,6 +10,9 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: #eee;
+}
 .logo {
   width: 100px;
   height: 50px;
@@ -79,4 +82,27 @@ html {
 
 .text-gold {
   color: #f8d409;
+}
+
+
+@media screen and (max-width: 595px) {
+
+  .gallery-img {
+    height: 100px;
+  }
+
+  .title{
+    font-size: 2rem;
+  }
+
+  .slider-img{
+    height: 50vh;
+  }
+
+  .hero-textbox h4{
+    font-size: .9rem;
+  }
+  .suites-slider-img {
+    height: 200px;
+  }
 }
